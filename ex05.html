@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+	$(()=>{
+		$("button.move").click(()=>{
+			$("img").animate({
+				left:"300px", height:"300px", width:"350px"
+			});
+		});
+		$("button.init").click(()=>{
+			$("img").animate({
+				left:"0px", height:"100px", width:"130px"
+			});//css는 한번에 바뀌고 animate는 서서히 바뀜(부드러운 효과)
+		});
+	});
+</script>
+</head>
+<body>
+	<button class="move">확대</button>
+	<button class="init">축소</button>
+	<hr>
+	<img src="./images/car01.png" width:"130"  height:"100" style="position: relative;" >
+</body>
+</html>

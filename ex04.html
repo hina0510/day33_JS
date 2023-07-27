@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<style type="text/css">
+		.img{color:blue; font-size: 30px}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+	<script type="text/javascript">
+		function addCss(){
+			$("div").addClass("img");
+		}
+		const rmCss=()=>{
+			$("div").removeClass("img");
+		}
+	</script>
+</head>
+<body>
+	<div>제이쿼리</div>
+	<button onclick="addCss()">css적용</button>
+	<button onclick="rmCss()">css해제</button>
+</body>
+</html>
